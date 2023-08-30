@@ -1,7 +1,7 @@
-# A3 Data Engineering Hackathon
+# A3Data Engineering Hackathon
 
 ## Português
-Este é um desafio de engenharia de dados em que a tarefa é implementar um pipeline de extração, transformação e disponibilização de dados. A fonte dos dados consiste em uma base de dados aberta do Cadastro Nacional da Pessoa Jurídica (CNPJ), disponibilizada pela Receita Federal Brasileira. O objetivo final é responder as seguintes perguntas de maneira visual:
+Este é um desafio de engenharia de dados promovido pela A3Data em que a tarefa é implementar um pipeline de extração, transformação e disponibilização de dados. A fonte dos dados consiste em uma base de dados aberta do Cadastro Nacional da Pessoa Jurídica (CNPJ), disponibilizada pela Receita Federal Brasileira. O objetivo final é responder as seguintes perguntas de maneira visual:
 
 1. Número de indústrias ativas por mês/ano entre 2010 - 2021, discriminado por MEI ou Simples, em cada município brasileiro
 2. Número de comércios que fecharam por mês/ano entre 2010 - 2021, discriminado por MEI ou Simples, em cada município brasileiro
@@ -25,7 +25,7 @@ Para conferir os resultados da análise e a visualização de dados no Data Stud
 
 ---
 ## English
-This is a data engineering challenge where the task is to implement a data extraction, transformation, and provisioning pipeline. The data source consists of an open database from the Brazilian Federal Revenue Service known as "Cadastro Nacional da Pessoa Jurídica" (CNPJ). The ultimate goal is to visually answer the following questions:
+This is a data engineering challenge promoted by A3Data where the task is to implement a data extraction, transformation, and provisioning pipeline. The data source consists of an open database from the Brazilian Federal Revenue Service known as "Cadastro Nacional da Pessoa Jurídica" (CNPJ). The ultimate goal is to visually answer the following questions:
 
 1. Number of active industries per month/year between 2010 - 2021, categorized as MEI or Simples, in each Brazilian municipality.
 2. Number of closed businesses per month/year between 2010 - 2021, categorized as MEI or Simples, in each Brazilian municipality.
