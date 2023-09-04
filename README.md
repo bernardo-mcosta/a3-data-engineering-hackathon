@@ -1,6 +1,8 @@
 # A3Data Engineering Hackathon
 
 ## Português
+Para conferir os resultados da análise e a visualização de dados no Data Studio, siga o link para a [Solução Final](https://lookerstudio.google.com/s/uoH8418-jsE).
+
 Este é um desafio de engenharia de dados promovido pela A3Data em que a tarefa é implementar um pipeline de extração, transformação e disponibilização de dados. A fonte dos dados consiste em uma base de dados aberta do Cadastro Nacional da Pessoa Jurídica (CNPJ), disponibilizada pela Receita Federal Brasileira. O objetivo final é responder as seguintes perguntas de maneira visual:
 
 1. Número de indústrias ativas por mês/ano entre 2010 - 2021, discriminado por MEI ou Simples, em cada município brasileiro
@@ -11,6 +13,7 @@ Este é um desafio de engenharia de dados promovido pela A3Data em que a tarefa 
 6. Qual a média do capital social das empresas de pequeno porte por natureza jurídica no último ano?
 
 ### Solução
+
 O ecossistema do Google foi escolhido para realizar todo o desafio pela facilidade de acesso, integração de ferramentas e proporcionar um crédito de 300 dólares para novas contas. 
 
 A solução utilizou as seguintes ferramentas:
@@ -21,10 +24,10 @@ A solução utilizou as seguintes ferramentas:
 
 O script de python `hackathon_extraction.ipynb` foi escrito para realizar um scrapping na página da web a procura dos links para fazer o download dos arquivos .CSV comprimidos em um formato .ZIP diretamente para um bucket do Google Colab, que em seguida são extraídos para uma nova pasta dentro do mesmo bucket. O script `hackathon_transformation.ipynb` faz uso da biblioteca PySpark para realizar a modelagem e transformação dos dados para então envia-los para o Google BigQuery, onde foi possível realizar consultas SQL para responder a cada questão, salvando-as no formato de tabelas, que são facilmente importadas por meio da integração com o Google Data Studio.
 
-Para conferir os resultados da análise e a visualização de dados no Data Studio, siga o link para a [Solução Final](https://lookerstudio.google.com/s/uoH8418-jsE).
-
 ---
 ## English
+To view the analysis results and data visualization in Data Studio, follow the link to the [Final Solution](https://lookerstudio.google.com/s/uoH8418-jsE).
+
 This is a data engineering challenge promoted by A3Data where the task is to implement a data extraction, transformation, and provisioning pipeline. The data source consists of an open database from the Brazilian Federal Revenue Service known as "Cadastro Nacional da Pessoa Jurídica" (CNPJ). The ultimate goal is to visually answer the following questions:
 
 1. Number of active industries per month/year between 2010 - 2021, categorized as MEI or Simples, in each Brazilian municipality.
@@ -46,5 +49,3 @@ The solution used the following tools:
 - Google Data Studio for dynamic data visualization.
 
 The Python script `hackathon_extraction.ipynb` was written to scrape the web page for links to download the compressed .CSV files in .ZIP format directly to a Google Colab bucket. These files are then extracted into a new folder within the same bucket. The `hackathon_transformation.ipynb` script uses the PySpark library to model and transform the data, which is then sent to Google BigQuery. SQL queries were performed to answer each question, and the results were saved in table format, easily imported through integration with Google Data Studio.
-
-To view the analysis results and data visualization in Data Studio, follow the link to the [Final Solution](https://lookerstudio.google.com/s/uoH8418-jsE).
